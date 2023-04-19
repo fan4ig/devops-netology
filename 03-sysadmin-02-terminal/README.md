@@ -48,9 +48,13 @@
 ##	5. Получится ли одновременно передать команде файл на stdin и вывести её stdout в другой файл? Приведите работающий пример.
 
 vagrant@vagrant:~$ echo "Hello, world!" > 1.txt
+
 vagrant@vagrant:~$ cat <1.txt >2.txt
+
 vagrant@vagrant:~$ cat 2.txt
+
 Hello, world!
+
 vagrant@vagrant:~$
 
 ##	6. Получится ли, находясь в графическом режиме, вывести данные из PTY в какой-либо из эмуляторов TTY? Сможете ли вы наблюдать выводимые данные?
