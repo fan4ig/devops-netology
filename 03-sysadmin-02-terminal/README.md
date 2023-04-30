@@ -93,28 +93,45 @@ ll 3>&2 2>&1 1>&3 | grep "No such file".
 vagrant@vagrant:~$ ll 3>&2 2>&1 1>&3 | grep "No such file"
 total 60
 drwxr-xr-x 5 vagrant vagrant 4096 Apr 30 12:34 ./
+
 drwxr-xr-x 3 root    root    4096 Mar 14 21:57 ../
+
 -rw-rw-r-- 1 vagrant vagrant   14 Apr 19 20:43 1.txt
+
 -rw-rw-r-- 1 vagrant vagrant   14 Apr 30 13:04 2.txt
+
 -rw------- 1 vagrant vagrant 1881 Apr 26 20:38 .bash_history
+
 -rw-r--r-- 1 vagrant vagrant  220 Feb 25  2020 .bash_logout
+
 -rw-r--r-- 1 vagrant vagrant 3771 Feb 25  2020 .bashrc
+
 drwx------ 2 vagrant vagrant 4096 Mar 14 21:58 .cache/
+
 drwx------ 4 vagrant vagrant 4096 Apr 13 13:35 .config/
+
 -rw------- 1 vagrant vagrant  148 Apr  6 20:38 .lesshst
+
 -rw-r--r-- 1 vagrant vagrant  807 Feb 25  2020 .profile
+
 drwx------ 2 vagrant vagrant 4096 Apr  6 11:29 .ssh/
+
 -rw-r--r-- 1 vagrant vagrant    0 Mar 14 21:58 .sudo_as_admin_successful
+
 -rw-rw-r-- 1 vagrant vagrant   42 Apr 30 12:34 test
+
 -rw-r--r-- 1 vagrant vagrant    5 Mar 14 21:58 .vbox_version
+
 -rw-r--r-- 1 root    root     180 Mar 14 22:03 .wget-hsts
 
 А затем вызовем ту же команду ll, но на этот раз указал в качестве параметра несуществующий файл 123456:
+
 ll 123456 3>&2 2>&1 1>&3 | grep "No such file"
 
 Увидим:
 
 vagrant@vagrant:~$ ll 123456 3>&2 2>&1 1>&3 | grep "No such file"
+
 ls: cannot access '123456': No such file or directory
 
 ##	9. Что выведет команда `cat /proc/$$/environ`? Как ещё можно получить аналогичный по содержанию вывод?
