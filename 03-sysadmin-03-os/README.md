@@ -27,6 +27,9 @@
 
     Вам нужно найти тот единственный, который относится именно к `cd`. Обратите внимание, что `strace` выдаёт результат своей работы в поток stderr, а не в stdout.
    ##   Ответ 
+   
+   chdir("/tmp")
+   
 ```bash
 vagrant@vagrant:~$ strace /bin/bash -c 'cd /tmp' 2>&1 | grep 'tmp'
 execve("/bin/bash", ["/bin/bash", "-c", "cd /tmp"], 0x7fff22238070 /* 23 vars */) = 0
