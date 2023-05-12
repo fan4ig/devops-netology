@@ -34,7 +34,7 @@
 	$ sudo systemctl status node_exporter.service  
 	● node_exporter.service - Node Exporter  
      Loaded: loaded (/etc/systemd/system/node_exporter.service; enabled; vendor preset: enabled)  
-     Active: active (running) since Fri 2021-11-26 05:37:36 UTC; 4h 10min ago  
+     Active: active (running) since Fri 2023-05-12 11:37:36 UTC; 4h 10min ago  
    Main PID: 690 (node_exporter)  
       Tasks: 5 (limit: 4616)  
      Memory: 14.7M  
